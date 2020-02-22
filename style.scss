@@ -1,0 +1,567 @@
+$note_background :rgb(252, 223, 219);
+$chic_background:rgb(255, 245, 254);
+$delice_background:rgb(249, 249, 249);
+$palette_background:rgb(253, 255, 253);
+$global_background:#579c87;
+
+
+$note_font_color:rgb(60, 18, 24);
+$chic_color--orange:rgb(199, 116, 18);
+$chic_color--lavanda:rgb(157, 98, 219);
+$chic_color--purple:rgb(110, 76, 204);
+$delice_color--darkerBlue:rgb(7, 85, 158);
+$delice_color--blue:rgb(8, 135, 251);
+$delice_color--lighterBlue:rgb(82, 181, 238) ;
+$palette_font_green:rgb(114, 191, 86);
+$palette_font_lighterGreen:rgb(190, 255, 127);
+$box_shadow_color:rgb(179, 177, 177);
+$global_font_color:rgb(253, 203, 70);
+
+
+$global_font:'Montserrat', sans-serif ;
+$menu_p_font:'Caveat', cursive;
+$note_font:'Zhi Mang Xing', cursive;
+$chic_heading_font:'Croissant One', cursive;
+$chic_p_font:'Playfair Display', serif;
+$delice_font:'Dancing Script', cursive;
+$palette_font:'Kaushan Script', cursive;
+
+html, body{
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 50px;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+}
+
+.global-header-footer{
+    width: 100%;
+    text-align: center;
+    line-height: inherit;
+}
+.global__header{
+    font-size: 4em;
+}
+.global__footer{
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    aside{
+        margin: 20px;
+    }
+    h3{
+        font-size: 1.8em;
+    }
+}
+a{
+    text-decoration: none;
+    color:inherit; 
+}
+
+.global_font_color{
+    color: $global_font_color;
+}
+.global_background{
+    background-color: $global_background;
+}
+.global_font{
+    font-family:$global_font;
+}
+.aside_prochainement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    max-width: 40%;
+    height: 120px;
+    margin-bottom: 50px;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding: 0;
+
+    .prochainement{
+        font-size:2em;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+.accueil_menu{
+    display: flex;
+    width: 40%;
+    height: 600px;
+    box-shadow: 0 0 2em $box_shadow_color;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 2em; 
+        margin-bottom: 5px;
+    }
+    h3{
+        font-size: 3em;
+        font-family: 'Caveat', cursive;
+        margin-top: 10px;
+    
+    }
+}
+
+.transition_menu{
+    overflow: hidden;
+}
+.zoom{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: scale(1);
+    transition: transorm, opacity, 200ms ease-out;
+}
+.zoom:hover{
+    opacity: 0.6;
+    transform: scale(1.3);
+}
+
+
+.menu_note{
+    background-color: $note_background;
+    color: $note_font_color;
+    margin: 7% 3% 3% 7%;
+
+    h2{
+        font-family: $note_font;
+    }
+    h3{
+        color: $note_font_color;
+    }
+}
+
+.menu_chic{
+    background-color: $chic_background;
+    margin: 7% 7% 3% 3%;
+
+    h2{
+        background: -webkit-linear-gradient(310deg, $chic_color--orange 20% ,$chic_color--lavanda 60%, $chic_color--purple 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $chic_heading_font;
+    }
+    h3{
+        color: $chic_color--orange;
+        font-family: $chic_p_font;
+    }
+}
+
+.menu_delice{
+    background-color: $delice_background;
+    margin: 3% 3% 7% 7%;
+
+    h2{
+        font-family: $delice_font;
+        background: -webkit-linear-gradient(left,$delice_color--darkerBlue 20%,$delice_color--lighterBlue 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3{
+        color: $delice_color--blue;
+    }
+}
+
+.menu_palette{
+    background-color: $palette_background;
+    margin: 3% 7% 7% 3%;
+
+    h2{
+        font-family: $palette_font;
+        background: -webkit-linear-gradient(left, $palette_font_green 20%, $palette_font_lighterGreen 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3{
+        color: $palette_font_green;
+    }
+}
+
+
+
+/**Ici le css commun à tous les menus **/
+.section_menu{
+    width:100%;
+    padding: 5% 0 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $menu_p_font;
+    font-size: 2em;
+}
+
+.menu_p_font{
+    font-family: $menu_p_font;
+}
+.div_global{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 2em $box_shadow_color;
+    padding: 3%;
+    width: 80%;
+}
+.menu_heading{
+    text-align: center;
+    width: auto;
+}
+
+.meal_heading{
+    width: auto;
+    text-align: center; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+}
+.deco{
+    width: inherit;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+
+    svg{
+        max-width: 300px;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+
+        path{
+            stroke: transparent;
+        }
+    }
+}
+
+.global_meals{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: smaller;
+}
+.meals_details{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+.meal{
+    text-align: left;
+    width: 90%;
+    margin: 10px;
+}
+.price{
+    text-align: right;
+    width: 10%;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+/** ici le css propre au menu note **/
+
+.note_style{
+    background-color: $note_background;
+    color: $note_font_color;
+}
+
+.note_font{
+    font-family: $note_font;
+}
+
+.note_bottom{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: auto;
+}
+.path-note{
+    fill:$note_font_color;
+    stroke: transparent;
+}
+.gradient_note{
+    fill: url(#gradientNote);
+    stroke: transparent;
+}
+.noteIcone_width_accueil{
+    width: 70px;
+    height: 100px;
+}
+.noteIcone_width_menuTop{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: -30px;
+}
+.noteIcone_width_menuBottom{
+    width: 60px;
+    height: 100px;
+    margin-right: 20px;
+}
+.transparent_note{
+    fill: $note_background;
+}
+.align_note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** ici le css propre au menu chic **/
+
+.chic_style{
+    background-color: $chic_background;
+  
+}
+
+.chic_heading{
+    background: -webkit-linear-gradient(310deg, $chic_color--orange 30% , $chic_color--lavanda 60%, $chic_color--purple 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family:$chic_heading_font;
+}
+
+.chic_p_font{
+    font-family: $chic_p_font;
+}
+.orange{
+    color: $chic_color--orange;
+}
+.lavanda{
+    color: $chic_color--lavanda;
+}
+.purple{
+    color: $chic_color--purple;
+}
+.path_orange{
+    fill: $chic_color--orange;
+    
+}
+
+.path_lavanda{
+    fill: $chic_color--lavanda;
+}
+
+.path_purple{
+    
+    fill: $chic_color--purple;
+}
+
+/** ici le css propre au menu delice **/
+
+.delice_style{
+    background-color: $delice_background;
+}
+.delice_heading{
+    font-family: $delice_font;
+    background: -webkit-linear-gradient(left,$delice_color--darkerBlue 20%, $delice_color--lighterBlue 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.ligne_delice{
+    width: 300px;
+    height: 100px;
+    align-items: center;
+    
+}
+.path1_delice{
+    fill: $delice_color--darkerBlue;
+    
+}
+
+.path2_delice{
+    fill: $delice_color--blue;
+    
+}
+
+.path3_delice{
+    fill: $delice_color--lighterBlue;
+    
+}
+
+/** ici le css propre au menu palette **/
+
+.palette_style{
+    background-color: $palette_background;
+}
+
+.palette_heading{
+    font-family: $palette_font;
+    background: -webkit-linear-gradient(left, $palette_font_green 20%, $palette_font_lighterGreen 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient_palette_left{
+    fill: url(#gradientPalette);
+
+}
+.gradient_palette_right{
+    fill: url(#gradientPaletteRight)
+}
+
+/** ici l'animation des dots loading**/
+
+.loading_dots {
+    text-align: center;
+    z-index: 5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+  
+.dot {
+    display: inline;
+    position: relative;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 3.5em;
+    opacity: 0;
+    animation: showHideDot 2.5s ease-in-out infinite;
+    color: $global_font_color;
+
+}
+  
+.one { animation-delay: 0.2s; }
+.two { animation-delay: 0.4s; }
+.three { animation-delay: 0.6s; }
+    
+  
+  
+  @keyframes showHideDot {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/** ici l'animation wiggle sur les liens mention et contact **/
+
+.wiggle { 
+    animation: wiggle 75ms infinite;
+    animation-timing-function: linear;   
+  }
+  
+  @keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+  }
+
+  /** ici le surlignement des titres **/
+
+.titre{
+    cursor: pointer;
+    position:relative;
+    transform: translateZ(0);
+    padding-left: 20px;
+    padding-right: 20px;
+
+        &:before{
+        content:"";
+        position:absolute;
+        z-index:-1;
+        left:0;
+        right:100%;
+        bottom:0;
+        background:currentColor;
+        height:3px;
+        transition:right 0.3s ease-out;
+        border-radius: 50%;
+    }
+    &:hover:before{
+        right:0;
+    }
+
+}
+
+ /** ici le css de la page mentions légales**/
+.mention_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.mention{
+    width: 50%;
+}
+.mention_header{
+    text-align: center;
+}
+.titre_underline{
+    text-decoration: underline;
+}
+
+/** ici le responsive **/
+
+@media all and (max-width: 1024px){
+    /** responsive page d'accueil et global **/
+    section{
+        flex-direction: column;
+    }
+    .accueil_menu{
+        width: 90%;
+        height: 200px;
+        margin: 5%;
+    }
+    .noteIcone_width_accueil{
+        width: 40px;
+        height: 80px;
+        position: relative;
+        top: 2em;
+    }
+    .aside_prochainement{
+        max-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .prochainement{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .loading_dots{
+        max-height: 30px;
+
+        .dot{
+            top: -0.3em;
+        }
+    }
+    footer{
+        max-height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    /** responsive menus **/
+    .deco{
+        width: 30%;
+    }
+  }
