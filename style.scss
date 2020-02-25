@@ -112,6 +112,7 @@ a{
     h2{
         font-size: 2em; 
         margin-bottom: 5px;
+        padding: 3px;
     }
     h3{
         font-size: 3em;
@@ -524,6 +525,14 @@ a{
 
 @media all and (max-width: 1024px){
     /** responsive page d'accueil et global **/
+    header{
+        width: 100%;
+
+        h1{
+            font-size: 2.5em;
+        }
+    
+    }
     section{
         flex-direction: column;
     }
@@ -551,7 +560,8 @@ a{
         max-height: 30px;
 
         .dot{
-            top: -0.3em;
+            /**top: -0.3em;**/
+            font-size: 2.5em;
         }
     }
     footer{
@@ -565,3 +575,6 @@ a{
         width: 30%;
     }
   }
+  
+  
+  
