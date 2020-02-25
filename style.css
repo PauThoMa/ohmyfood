@@ -682,7 +682,7 @@ a {
     width: 100%;
   }
   header h1 {
-    font-size: 2.5em;
+    font-size: 3em !important;
   }
   section {
     -webkit-box-orient: vertical;
@@ -694,6 +694,12 @@ a {
     width: 90%;
     height: 200px;
     margin: 5%;
+  }
+  .meals_details {
+    font-size: 4vw;
+  }
+  .menu_heading {
+    font-size: 5vw;
   }
   .noteIcone_width_accueil {
     width: 40px;
@@ -708,13 +714,12 @@ a {
   }
   .prochainement {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 4.5vw !important;
   }
   .loading_dots {
     max-height: 30px;
   }
   .loading_dots .dot {
-    /**top: -0.3em;**/
     font-size: 2.5em;
   }
   footer {
@@ -731,6 +736,4 @@ a {
     width: 30%;
   }
 }
-
-
 /*# sourceMappingURL=style.css.map */
