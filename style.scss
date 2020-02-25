@@ -111,7 +111,7 @@ a{
     align-items: center;
 
     h2{
-        font-size: 2.5em; 
+        font-size: 2.3em; 
         margin-bottom: 5px;
         padding: 3px;
     }
@@ -229,7 +229,7 @@ a{
 .menu_heading{
     text-align: center;
     width: auto;
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
 
 .meal_heading{
@@ -270,7 +270,7 @@ a{
     width: auto;
     display: flex;
     flex-direction: row;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .meal{
     text-align: left;
@@ -343,7 +343,7 @@ a{
 }
 
 .chic_heading{
-    background: -webkit-linear-gradient(right, #c77412 20%, #9d62db 60% );
+    background: -webkit-linear-gradient(310deg, $chic_color--orange 20% ,$chic_color--lavanda 60%, $chic_color--purple 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         font-family: $chic_heading_font;
@@ -489,7 +489,7 @@ a{
     transform: translateZ(0);
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 2em;
+    font-size: 1.5em;
 
         &:before{
         content:"";

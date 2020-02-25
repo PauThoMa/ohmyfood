@@ -126,7 +126,7 @@ a {
 }
 
 .accueil_menu h2 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   margin-bottom: 5px;
   padding: 3px;
 }
@@ -273,7 +273,7 @@ a {
 .menu_heading {
   text-align: center;
   width: auto;
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 
 .meal_heading {
@@ -339,7 +339,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .meal {
@@ -427,7 +427,7 @@ a {
 }
 
 .chic_heading {
-  background: -webkit-linear-gradient(right, #c77412 20%, #9d62db 60%);
+  background: -webkit-linear-gradient(310deg, #c77412 20%, #9d62db 60%, #6e4ccc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Croissant One", cursive;
@@ -634,7 +634,7 @@ a {
           transform: translateZ(0);
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .titre:before {
