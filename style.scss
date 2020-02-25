@@ -342,10 +342,10 @@ a{
 }
 
 .chic_heading{
-    background: -webkit-linear-gradient(310deg, #c77412 20%, #9d62db 60%, #6e4ccc 100%);
+    background: -webkit-linear-gradient(right, #c77412 20%, #9d62db 60%, #6e4ccc 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family:$chic_heading_font;
+        -webkit-text-fill-color:transparent;
+        font-family: $chic_heading_font;
 }
 
 .chic_p_font{
