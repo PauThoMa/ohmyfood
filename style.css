@@ -696,13 +696,13 @@ a {
     margin: 5%;
   }
   .meals_details {
-    font-size: 4vw;
-  }
-  .menu_heading {
     font-size: 5vw;
   }
+  .menu_heading {
+    font-size: 6vw;
+  }
   .titre {
-    font-size: 4.5vw;
+    font-size: 5.5vw;
   }
   .noteIcone_width_accueil {
     width: 40px;
