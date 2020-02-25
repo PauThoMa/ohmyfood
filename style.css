@@ -422,7 +422,7 @@ a {
 }
 
 .chic_heading {
-  background: -webkit-linear-gradient(310deg, #c77412 30%, #9d62db 60%, #6e4ccc 100%);
+  background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Croissant One", cursive;
@@ -736,7 +736,7 @@ a {
   }
   /** responsive menus **/
   .deco {
-    width: 30%;
+    width: 6vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
