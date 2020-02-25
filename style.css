@@ -701,6 +701,9 @@ a {
   .menu_heading {
     font-size: 5vw;
   }
+  .titre {
+    font-size: 4.5vw;
+  }
   .noteIcone_width_accueil {
     width: 40px;
     height: 80px;
@@ -714,13 +717,13 @@ a {
   }
   .prochainement {
     width: 100%;
-    font-size: 4.5vw !important;
+    font-size: 5vw !important;
   }
   .loading_dots {
     max-height: 30px;
   }
   .loading_dots .dot {
-    font-size: 2.5em;
+    font-size: 5vw;
   }
   footer {
     max-height: 100px;
